@@ -8,7 +8,7 @@ const CategoryIcons = {
       fill="currentColor"
       className="w-6 h-6 text-[var(--sec)] opacity-70"
     >
-      <path d="M21 3C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21ZM20 11H4V19H20V11ZM20 5H4V9H20V5ZM11 6V8H9V6H11ZM7 6V8H5V6H7Z"></path>
+      <path d="M3 3h18c.552 0 1 .448 1 1v16c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V4c0-.552.448-1 1-1zm17 4H4v12h16V7zM5 4.5c.276 0 .5.224.5.5s-.224.5-.5.5-.5-.224-.5-.5.224-.5.5-.5zm2 0c.276 0 .5.224.5.5s-.224.5-.5.5-.5-.224-.5-.5.224-.5.5-.5zm2 0c.276 0 .5.224.5.5s-.224.5-.5.5-.5-.224-.5-.5.224-.5.5-.5zm-2 6l2 2-2 2-.5-.5L8 12.5l-1.5-1.5.5-.5zm4 3h5v1h-5v-1z"></path>
     </svg>
   ),
   "Mobile Development": (
@@ -18,7 +18,7 @@ const CategoryIcons = {
       fill="currentColor"
       className="w-6 h-6 text-[var(--sec)] opacity-70"
     >
-      <path d="M7 4V20H17V4H7ZM6 2H18C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2ZM12 17C12.5523 17 13 17.4477 13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17Z"></path>
+      <path d="M16 2H8C6.895 2 6 2.895 6 4V20C6 21.105 6.895 22 8 22H16C17.105 22 18 21.105 18 20V4C18 2.895 17.105 2 16 2ZM16 18H8V6H16V18ZM12 19C12.552 19 13 19.448 13 20C13 20.552 12.552 21 12 21C11.448 21 11 20.552 11 20C11 19.448 11.448 19 12 19Z"></path>
     </svg>
   ),
   "Cloud Engineering": (
@@ -28,7 +28,7 @@ const CategoryIcons = {
       fill="currentColor"
       className="w-6 h-6 text-[var(--sec)] opacity-70"
     >
-      <path d="M6 19c-2.21 0-4-1.79-4-4 0-1.86 1.28-3.41 3-3.86C5.11 7.62 7.98 5 11.5 5c3.31 0 6 2.69 6 6 0 .34-.03.67-.08 1H18c2.21 0 4 1.79 4 4s-1.79 4-4 4H6z" />
+      <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h.71C7.37 7.69 9.48 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3s-1.34 3-3 3z"></path>
     </svg>
   ),
 };
@@ -42,10 +42,7 @@ const SkillsList = () => {
       "Landing pages and business websites",
       "Portfolio websites",
     ],
-    "Mobile Development": [
-      "Mobile-friendly web apps",
-      "Flutter mobile apps",
-    ],
+    "Mobile Development": ["Mobile-friendly web apps", "Flutter mobile apps"],
     "Cloud Engineering": [
       "Deploy apps to cloud platforms",
       "Manage cloud servers and storage",
