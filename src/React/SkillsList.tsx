@@ -21,7 +21,7 @@ const CategoryIcons = {
       <path d="M16 2H8C6.895 2 6 2.895 6 4V20C6 21.105 6.895 22 8 22H16C17.105 22 18 21.105 18 20V4C18 2.895 17.105 2 16 2ZM16 18H8V6H16V18ZM12 19C12.552 19 13 19.448 13 20C13 20.552 12.552 21 12 21C11.448 21 11 20.552 11 20C11 19.448 11.448 19 12 19Z"></path>
     </svg>
   ),
-  "Cloud Engineering": (
+  "Cloud Computing": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ const SkillsList = () => {
       "Portfolio websites",
     ],
     "Mobile Development": ["Mobile-friendly web apps", "Flutter mobile apps"],
-    "Cloud Engineering": [
+    "Cloud Computing": [
       "Deploy apps to cloud platforms",
       "Manage cloud servers and storage",
       "Monitor and optimize performance",
