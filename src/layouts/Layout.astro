@@ -2,7 +2,6 @@
 interface Props {
   title: string;
 }
-
 const { title } = Astro.props;
 ---
 
@@ -10,40 +9,34 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Web Developer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#101010" />
+    <meta name="description" content="Muhammad Bintang Nugraha - Web Developer portfolio" />
+    <link rel="canonical" href="https://bintangnugraha.vercel.app" />
     <meta property="og:title" content="Muhammad Bintang Nugraha" />
     <meta property="og:description" content="Web Developer" />
-    <meta property="og:image" content="https://bintangnugraha.vercel.app/og.image.png" />
+    <meta property="og:image" content="https://bintangnugraha.vercel.app/og.image.webp" />
     <meta property="og:url" content="https://bintangnugraha.vercel.app" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Muhammad Bintang Nugraha Portfolio" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload"
-      as="style"
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    />
-    <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      media="print"
-      onload="this.media='all'"
+      as="style"
+      media="all"
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      />
-    </noscript>
-
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
     <title>{title}</title>
   </head>
-  <body class="bg-[--background] md:px-48 lg:px-20 px-9">
-    <slot />
+
+  <body class="bg-[--background] md:px-48 lg:px-20 px-9 text-[var(--white)]">
+    <main id="main-content" tabindex="-1">
+      <slot />
+    </main>
   </body>
 </html>
 
@@ -56,15 +49,16 @@ const { title } = Astro.props;
     --white-icon-tr: #f3f3f310;
   }
 
-  * {
-    font-family:
-      "montserrat",
-      -apple-system,
-      system-ui,
-      sans-serif;
-    box-sizing: border-box;
-    padding: 0;
+  html {
+    font-family: "Montserrat", -apple-system, system-ui, sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--background);
+  }
+
+  body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   *::selection {
@@ -72,29 +66,25 @@ const { title } = Astro.props;
     color: var(--background);
   }
 
-  /* Scrollbar styles */
-
   ::-webkit-scrollbar {
-    width: 15px;
+    width: 14px;
   }
 
   ::-webkit-scrollbar-track {
-    background: var(--container);
-    border-radius: 30px;
+    background: var(--background);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--background);
+    background: var(--white-icon);
     border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--pink);
+    background: var(--sec);
   }
 
-  /* Scrollbar styles for Firefox */
   * {
     scrollbar-width: thin;
-    scrollbar-color: var(--line) var(--container);
+    scrollbar-color: var(--white-icon) var(--background);
   }
 </style>

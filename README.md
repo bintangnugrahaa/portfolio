@@ -1,4 +1,4 @@
-![Build the web you want](public/og.image.png 'Build the web you want')
+![Build the web you want](public/og.image.webp 'Build the web you want')
 
 <p align="center">
   <br/>
