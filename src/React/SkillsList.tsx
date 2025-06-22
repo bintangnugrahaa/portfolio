@@ -62,12 +62,12 @@ const SkillsList = () => {
 
   return (
     <section className="text-left pt-3 md:pt-9" aria-labelledby="skills-title">
-      <h3
+      <h2
         id="skills-title"
         className="text-[var(--white)] text-3xl md:text-4xl font-semibold md:mb-6"
       >
         What I do?
-      </h3>
+      </h2>
       <ul className="space-y-4 mt-4 text-lg">
         {Object.entries(skills).map(([category, items]) => {
           const isOpen = openItem === category;
