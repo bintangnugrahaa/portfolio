@@ -13,10 +13,10 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.8.3)
       '@astrojs/react':
         specifier: ^4.3.0
-        version: 4.3.0(@types/node@24.0.7)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.8.0)
+        version: 4.3.0(@types/node@24.0.8)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.8.0)
       '@astrojs/tailwind':
         specifier: ^6.0.2
-        version: 6.0.2(astro@5.10.1(@types/node@24.0.7)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
+        version: 6.0.2(astro@5.10.1(@types/node@24.0.8)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
       '@types/react':
         specifier: ^19.1.8
         version: 19.1.8
@@ -25,7 +25,7 @@ importers:
         version: 19.1.6(@types/react@19.1.8)
       astro:
         specifier: ^5.10.1
-        version: 5.10.1(@types/node@24.0.7)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
+        version: 5.10.1(@types/node@24.0.8)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
       firebase:
         specifier: ^11.10.0
         version: 11.10.0
@@ -34,7 +34,7 @@ importers:
         version: 1.0.11
       portfolio:
         specifier: 'file:'
-        version: file:(@types/node@24.0.7)(jiti@1.21.7)(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(rollup@4.44.0)(tailwindcss@3.4.17)(yaml@2.8.0)
+        version: file:(@types/node@24.0.8)(jiti@1.21.7)(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(rollup@4.44.0)(tailwindcss@3.4.17)(yaml@2.8.0)
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -49,8 +49,8 @@ importers:
         version: 5.8.3
     devDependencies:
       '@types/node':
-        specifier: ^24.0.7
-        version: 24.0.7
+        specifier: ^24.0.8
+        version: 24.0.8
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
@@ -1069,8 +1069,8 @@ packages:
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
 
-  '@types/node@24.0.7':
-    resolution: {integrity: sha512-YIEUUr4yf8q8oQoXPpSlnvKNVKDQlPMWrmOcgzoduo7kvA2UF0/BwJ/eMKFTiTtkNL17I0M6Xe2tvwFU7be6iw==}
+  '@types/node@24.0.8':
+    resolution: {integrity: sha512-WytNrFSgWO/esSH9NbpWUfTMGQwCGIKfCmNlmFDNiI5gGhgMmEA+V1AEvKLeBNvvtBnailJtkrEa2OIISwrVAA==}
 
   '@types/react-dom@19.1.6':
     resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
@@ -2802,15 +2802,15 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@4.3.0(@types/node@24.0.7)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.8.0)':
+  '@astrojs/react@4.3.0(@types/node@24.0.8)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.8.0)':
     dependencies:
       '@types/react': 19.1.8
       '@types/react-dom': 19.1.6(@types/react@19.1.8)
-      '@vitejs/plugin-react': 4.5.0(vite@6.3.5(@types/node@24.0.7)(jiti@1.21.7)(yaml@2.8.0))
+      '@vitejs/plugin-react': 4.5.0(vite@6.3.5(@types/node@24.0.8)(jiti@1.21.7)(yaml@2.8.0))
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       ultrahtml: 1.6.0
-      vite: 6.3.5(@types/node@24.0.7)(jiti@1.21.7)(yaml@2.8.0)
+      vite: 6.3.5(@types/node@24.0.8)(jiti@1.21.7)(yaml@2.8.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -2825,9 +2825,9 @@ snapshots:
       - tsx
       - yaml
 
-  '@astrojs/tailwind@6.0.2(astro@5.10.1(@types/node@24.0.7)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@6.0.2(astro@5.10.1(@types/node@24.0.8)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 5.10.1(@types/node@24.0.7)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.10.1(@types/node@24.0.8)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
       autoprefixer: 10.4.21(postcss@8.5.3)
       postcss: 8.5.3
       postcss-load-config: 4.0.2(postcss@8.5.3)
@@ -3393,7 +3393,7 @@ snapshots:
   '@grpc/grpc-js@1.9.15':
     dependencies:
       '@grpc/proto-loader': 0.7.15
-      '@types/node': 24.0.7
+      '@types/node': 24.0.8
 
   '@grpc/proto-loader@0.7.15':
     dependencies:
@@ -3772,7 +3772,7 @@ snapshots:
 
   '@types/fontkit@2.0.8':
     dependencies:
-      '@types/node': 24.0.7
+      '@types/node': 24.0.8
 
   '@types/hast@3.0.4':
     dependencies:
@@ -3788,7 +3788,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@24.0.7':
+  '@types/node@24.0.8':
     dependencies:
       undici-types: 7.8.0
 
@@ -3804,7 +3804,7 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vitejs/plugin-react@4.5.0(vite@6.3.5(@types/node@24.0.7)(jiti@1.21.7)(yaml@2.8.0))':
+  '@vitejs/plugin-react@4.5.0(vite@6.3.5(@types/node@24.0.8)(jiti@1.21.7)(yaml@2.8.0))':
     dependencies:
       '@babel/core': 7.27.1
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.27.1)
@@ -3812,7 +3812,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.9
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 6.3.5(@types/node@24.0.7)(jiti@1.21.7)(yaml@2.8.0)
+      vite: 6.3.5(@types/node@24.0.8)(jiti@1.21.7)(yaml@2.8.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -3904,7 +3904,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@5.10.1(@types/node@24.0.7)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.10.1(@types/node@24.0.8)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
@@ -3959,8 +3959,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.16.0
       vfile: 6.0.3
-      vite: 6.3.5(@types/node@24.0.7)(jiti@1.21.7)(yaml@2.8.0)
-      vitefu: 1.0.7(vite@6.3.5(@types/node@24.0.7)(jiti@1.21.7)(yaml@2.8.0))
+      vite: 6.3.5(@types/node@24.0.8)(jiti@1.21.7)(yaml@2.8.0)
+      vitefu: 1.0.7(vite@6.3.5(@types/node@24.0.8)(jiti@1.21.7)(yaml@2.8.0))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -5015,14 +5015,14 @@ snapshots:
 
   pirates@4.0.7: {}
 
-  portfolio@file:(@types/node@24.0.7)(jiti@1.21.7)(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(rollup@4.44.0)(tailwindcss@3.4.17)(yaml@2.8.0):
+  portfolio@file:(@types/node@24.0.8)(jiti@1.21.7)(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(rollup@4.44.0)(tailwindcss@3.4.17)(yaml@2.8.0):
     dependencies:
       '@astrojs/check': 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.8.3)
-      '@astrojs/react': 4.3.0(@types/node@24.0.7)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.8.0)
-      '@astrojs/tailwind': 6.0.2(astro@5.10.1(@types/node@24.0.7)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
+      '@astrojs/react': 4.3.0(@types/node@24.0.8)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.8.0)
+      '@astrojs/tailwind': 6.0.2(astro@5.10.1(@types/node@24.0.8)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
       '@types/react': 19.1.8
       '@types/react-dom': 19.1.6(@types/react@19.1.8)
-      astro: 5.10.1(@types/node@24.0.7)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.10.1(@types/node@24.0.8)(jiti@1.21.7)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
       firebase: 11.10.0
       ogl: 1.0.11
       react: 19.1.0
@@ -5152,7 +5152,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 24.0.7
+      '@types/node': 24.0.8
       long: 5.3.2
 
   queue-microtask@1.2.3: {}
@@ -5656,7 +5656,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@6.3.5(@types/node@24.0.7)(jiti@1.21.7)(yaml@2.8.0):
+  vite@6.3.5(@types/node@24.0.8)(jiti@1.21.7)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.5
       fdir: 6.4.6(picomatch@4.0.2)
@@ -5665,14 +5665,14 @@ snapshots:
       rollup: 4.44.0
       tinyglobby: 0.2.14
     optionalDependencies:
-      '@types/node': 24.0.7
+      '@types/node': 24.0.8
       fsevents: 2.3.3
       jiti: 1.21.7
       yaml: 2.8.0
 
-  vitefu@1.0.7(vite@6.3.5(@types/node@24.0.7)(jiti@1.21.7)(yaml@2.8.0)):
+  vitefu@1.0.7(vite@6.3.5(@types/node@24.0.8)(jiti@1.21.7)(yaml@2.8.0)):
     optionalDependencies:
-      vite: 6.3.5(@types/node@24.0.7)(jiti@1.21.7)(yaml@2.8.0)
+      vite: 6.3.5(@types/node@24.0.8)(jiti@1.21.7)(yaml@2.8.0)
 
   volar-service-css@0.0.62(@volar/language-service@2.4.14):
     dependencies:
