@@ -17,4 +17,5 @@ jobs:
         with:
           validateSingleCommit: true
           validateSingleCommitMatchesPrTitle: true
-          ignoreLabels: dependencies
+          ignoreLabels: |
+            - dependencies
