@@ -15,9 +15,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          # Configure which types of commits are allowed
-          # Default types are:
-          # 'feat', 'fix', 'chore', 'docs', 'style', 'refactor', 'perf', 'test', 'build', 'ci', 'revert'
-          # You can customize this list if needed
           validateSingleCommit: true
-          validateTitle: true
+          validateSingleCommitMatchesPrTitle: true
+          ignoreLabels: dependencies
