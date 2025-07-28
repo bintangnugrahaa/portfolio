@@ -33,7 +33,7 @@ dependencies:
     specifier: 'file:'
     version: file:(@types/node@24.1.0)(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(tailwindcss@3.4.17)
   react:
-    specifier: ^19.0.0
+    specifier: ^19.1.1
     version: 19.1.1
   react-dom:
     specifier: ^19.0.0
