@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/check':
     specifier: ^0.9.4
-    version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.8.3)
+    version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2)
   '@astrojs/react':
     specifier: ^4.3.0
     version: 4.3.0(@types/node@24.1.0)(@types/react-dom@19.1.7)(@types/react@19.1.9)(react-dom@19.1.1)(react@19.1.1)
@@ -22,7 +22,7 @@ dependencies:
     version: 19.1.7(@types/react@19.1.9)
   astro:
     specifier: ^5.12.6
-    version: 5.12.6(@types/node@24.1.0)(typescript@5.8.3)
+    version: 5.12.6(@types/node@24.1.0)(typescript@5.9.2)
   firebase:
     specifier: ^12.0.0
     version: 12.0.0
@@ -42,8 +42,8 @@ dependencies:
     specifier: ^0.34.3
     version: 0.34.3
   typescript:
-    specifier: ^5.8.3
-    version: 5.8.3
+    specifier: ^5.9.2
+    version: 5.9.2
 
 devDependencies:
   '@semantic-release/changelog':
@@ -66,7 +66,7 @@ devDependencies:
     version: 0.14.1
   semantic-release:
     specifier: ^24.2.7
-    version: 24.2.7(typescript@5.8.3)
+    version: 24.2.7(typescript@5.9.2)
 
 packages:
 
@@ -83,16 +83,16 @@ packages:
       '@jridgewell/trace-mapping': 0.3.29
     dev: false
 
-  /@astrojs/check@0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.8.3):
+  /@astrojs/check@0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2):
     resolution: {integrity: sha512-IOheHwCtpUfvogHHsvu0AbeRZEnjJg3MopdLddkJE70mULItS/Vh37BHcI00mcOJcH1vhD3odbpvWokpxam7xA==}
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
     dependencies:
-      '@astrojs/language-server': 2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.8.3)
+      '@astrojs/language-server': 2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2)
       chokidar: 4.0.3
       kleur: 4.1.5
-      typescript: 5.8.3
+      typescript: 5.9.2
       yargs: 17.7.2
     transitivePeerDependencies:
       - prettier
@@ -106,7 +106,7 @@ packages:
     resolution: {integrity: sha512-l5Pqf6uZu31aG+3Lv8nl/3s4DbUzdlxTWDof4pEpto6GUJNhhCbelVi9dEyurOVyqaelwmS9oSyOWOENSfgo9A==}
     dev: false
 
-  /@astrojs/language-server@2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.8.3):
+  /@astrojs/language-server@2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2):
     resolution: {integrity: sha512-JivzASqTPR2bao9BWsSc/woPHH7OGSGc9aMxXL4U6egVTqBycB3ZHdBJPuOCVtcGLrzdWTosAqVPz1BVoxE0+A==}
     hasBin: true
     peerDependencies:
@@ -121,7 +121,7 @@ packages:
       '@astrojs/compiler': 2.12.2
       '@astrojs/yaml2ts': 0.2.2
       '@jridgewell/sourcemap-codec': 1.5.4
-      '@volar/kit': 2.4.22(typescript@5.8.3)
+      '@volar/kit': 2.4.22(typescript@5.9.2)
       '@volar/language-core': 2.4.22
       '@volar/language-server': 2.4.22
       '@volar/language-service': 2.4.22
@@ -214,7 +214,7 @@ packages:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 5.12.6(@types/node@24.1.0)(typescript@5.8.3)
+      astro: 5.12.6(@types/node@24.1.0)(typescript@5.9.2)
       autoprefixer: 10.4.21(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)
@@ -2022,7 +2022,7 @@ packages:
       aggregate-error: 3.1.0
       fs-extra: 11.3.0
       lodash: 4.17.21
-      semantic-release: 24.2.7(typescript@5.8.3)
+      semantic-release: 24.2.7(typescript@5.9.2)
     dev: true
 
   /@semantic-release/commit-analyzer@13.0.1(semantic-release@24.2.7):
@@ -2039,7 +2039,7 @@ packages:
       import-from-esm: 2.0.0
       lodash-es: 4.17.21
       micromatch: 4.0.8
-      semantic-release: 24.2.7(typescript@5.8.3)
+      semantic-release: 24.2.7(typescript@5.9.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2068,7 +2068,7 @@ packages:
       lodash: 4.17.21
       micromatch: 4.0.8
       p-reduce: 2.1.0
-      semantic-release: 24.2.7(typescript@5.8.3)
+      semantic-release: 24.2.7(typescript@5.9.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2094,7 +2094,7 @@ packages:
       lodash-es: 4.17.21
       mime: 4.0.7
       p-filter: 4.1.0
-      semantic-release: 24.2.7(typescript@5.8.3)
+      semantic-release: 24.2.7(typescript@5.9.2)
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
@@ -2117,7 +2117,7 @@ packages:
       rc: 1.2.8
       read-pkg: 9.0.1
       registry-auth-token: 5.1.0
-      semantic-release: 24.2.7(typescript@5.8.3)
+      semantic-release: 24.2.7(typescript@5.9.2)
       semver: 7.7.2
       tempy: 3.1.0
     dev: true
@@ -2138,7 +2138,7 @@ packages:
       into-stream: 7.0.0
       lodash-es: 4.17.21
       read-package-up: 11.0.0
-      semantic-release: 24.2.7(typescript@5.8.3)
+      semantic-release: 24.2.7(typescript@5.9.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2326,7 +2326,7 @@ packages:
       - supports-color
     dev: false
 
-  /@volar/kit@2.4.22(typescript@5.8.3):
+  /@volar/kit@2.4.22(typescript@5.9.2):
     resolution: {integrity: sha512-o2LhNb2PLCUJ6v2XSqN7m+pJt+SE0QW1U2E52jnS8yZ03ohcGOOuFJdH1VlZgCBk0RlwO4xp0OaDoTtyTvMTrw==}
     peerDependencies:
       typescript: '*'
@@ -2334,7 +2334,7 @@ packages:
       '@volar/language-service': 2.4.22
       '@volar/typescript': 2.4.22
       typesafe-path: 0.2.2
-      typescript: 5.8.3
+      typescript: 5.9.2
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
     dev: false
@@ -2504,7 +2504,7 @@ packages:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
     dev: false
 
-  /astro@5.12.6(@types/node@24.1.0)(typescript@5.8.3):
+  /astro@5.12.6(@types/node@24.1.0)(typescript@5.9.2):
     resolution: {integrity: sha512-vDtuDYj/XlxyI2Ex63BM4/Awde8Pl3U3wS5I1NhogFIBPohBaJ1g9puu42XEm7GMZxRn9N3xFEpSP9uEO0W9/w==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
@@ -2557,7 +2557,7 @@ packages:
       smol-toml: 1.4.1
       tinyexec: 0.3.2
       tinyglobby: 0.2.14
-      tsconfck: 3.1.6(typescript@5.8.3)
+      tsconfck: 3.1.6(typescript@5.9.2)
       ultrahtml: 1.6.0
       unifont: 0.5.2
       unist-util-visit: 5.0.0
@@ -2570,7 +2570,7 @@ packages:
       yocto-spinner: 0.2.3
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
-      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.76)
+      zod-to-ts: 1.2.0(typescript@5.9.2)(zod@3.25.76)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -2973,7 +2973,7 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: true
 
-  /cosmiconfig@9.0.0(typescript@5.8.3):
+  /cosmiconfig@9.0.0(typescript@5.9.2):
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2986,7 +2986,7 @@ packages:
       import-fresh: 3.3.1
       js-yaml: 4.1.0
       parse-json: 5.2.0
-      typescript: 5.8.3
+      typescript: 5.9.2
     dev: true
 
   /cross-fetch@3.2.0:
@@ -5588,7 +5588,7 @@ packages:
     resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
     dev: false
 
-  /semantic-release@24.2.7(typescript@5.8.3):
+  /semantic-release@24.2.7(typescript@5.9.2):
     resolution: {integrity: sha512-g7RssbTAbir1k/S7uSwSVZFfFXwpomUB9Oas0+xi9KStSCmeDXcA7rNhiskjLqvUe/Evhx8fVCT16OSa34eM5g==}
     engines: {node: '>=20.8.1'}
     hasBin: true
@@ -5599,7 +5599,7 @@ packages:
       '@semantic-release/npm': 12.0.2(semantic-release@24.2.7)
       '@semantic-release/release-notes-generator': 14.0.3(semantic-release@24.2.7)
       aggregate-error: 5.0.0
-      cosmiconfig: 9.0.0(typescript@5.8.3)
+      cosmiconfig: 9.0.0(typescript@5.9.2)
       debug: 4.4.1
       env-ci: 11.1.1
       execa: 9.6.0
@@ -6078,7 +6078,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: false
 
-  /tsconfck@3.1.6(typescript@5.8.3):
+  /tsconfck@3.1.6(typescript@5.9.2):
     resolution: {integrity: sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==}
     engines: {node: ^18 || >=20}
     hasBin: true
@@ -6088,7 +6088,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      typescript: 5.8.3
+      typescript: 5.9.2
     dev: false
 
   /tslib@2.8.1:
@@ -6119,8 +6119,8 @@ packages:
       semver: 7.7.2
     dev: false
 
-  /typescript@5.8.3:
-    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+  /typescript@5.9.2:
+    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -6824,13 +6824,13 @@ packages:
       zod: 3.25.76
     dev: false
 
-  /zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.76):
+  /zod-to-ts@1.2.0(typescript@5.9.2)(zod@3.25.76):
     resolution: {integrity: sha512-x30XE43V+InwGpvTySRNz9kB7qFU8DlyEy7BsSTCHPH1R0QasMmHWZDCzYm6bVXtj/9NNJAZF3jW8rzFvH5OFA==}
     peerDependencies:
       typescript: ^4.9.4 || ^5.0.2
       zod: ^3
     dependencies:
-      typescript: 5.8.3
+      typescript: 5.9.2
       zod: 3.25.76
     dev: false
 
@@ -6847,18 +6847,18 @@ packages:
     id: 'file:'
     name: portfolio
     dependencies:
-      '@astrojs/check': 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.8.3)
+      '@astrojs/check': 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2)
       '@astrojs/react': 4.3.0(@types/node@24.1.0)(@types/react-dom@19.1.7)(@types/react@19.1.9)(react-dom@19.1.1)(react@19.1.1)
       '@astrojs/tailwind': 6.0.2(astro@5.12.6)(tailwindcss@3.4.17)
       '@types/react': 19.1.9
       '@types/react-dom': 19.1.7(@types/react@19.1.9)
-      astro: 5.12.6(@types/node@24.1.0)(typescript@5.8.3)
+      astro: 5.12.6(@types/node@24.1.0)(typescript@5.9.2)
       firebase: 12.0.0
       ogl: 1.0.11
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       sharp: 0.34.3
-      typescript: 5.8.3
+      typescript: 5.9.2
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
