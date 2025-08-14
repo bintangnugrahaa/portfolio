@@ -13,7 +13,7 @@ dependencies:
     version: 4.3.0(@types/node@24.2.1)(@types/react-dom@19.1.7)(@types/react@19.1.10)(react-dom@19.1.1)(react@19.1.1)
   '@astrojs/tailwind':
     specifier: ^6.0.2
-    version: 6.0.2(astro@5.12.9)(tailwindcss@3.4.17)
+    version: 6.0.2(astro@5.13.0)(tailwindcss@3.4.17)
   '@types/react':
     specifier: ^19.1.10
     version: 19.1.10
@@ -21,8 +21,8 @@ dependencies:
     specifier: ^19.1.7
     version: 19.1.7(@types/react@19.1.10)
   astro:
-    specifier: ^5.12.9
-    version: 5.12.9(@types/node@24.2.1)(typescript@5.9.2)
+    specifier: ^5.13.0
+    version: 5.13.0(@types/node@24.2.1)(typescript@5.9.2)
   firebase:
     specifier: ^12.1.0
     version: 12.1.0
@@ -208,13 +208,13 @@ packages:
       - yaml
     dev: false
 
-  /@astrojs/tailwind@6.0.2(astro@5.12.9)(tailwindcss@3.4.17):
+  /@astrojs/tailwind@6.0.2(astro@5.13.0)(tailwindcss@3.4.17):
     resolution: {integrity: sha512-j3mhLNeugZq6A8dMNXVarUa8K6X9AW+QHU9u3lKNrPLMHhOQ0S7VeWhHwEeJFpEK1BTKEUY1U78VQv2gN6hNGg==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 5.12.9(@types/node@24.2.1)(typescript@5.9.2)
+      astro: 5.13.0(@types/node@24.2.1)(typescript@5.9.2)
       autoprefixer: 10.4.21(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)
@@ -267,7 +267,7 @@ packages:
       '@babel/helper-compilation-targets': 7.27.2
       '@babel/helper-module-transforms': 7.27.3(@babel/core@7.28.0)
       '@babel/helpers': 7.28.2
-      '@babel/parser': 7.28.0
+      '@babel/parser': 7.28.3
       '@babel/template': 7.27.2
       '@babel/traverse': 7.28.0
       '@babel/types': 7.28.2
@@ -284,7 +284,7 @@ packages:
     resolution: {integrity: sha512-lJjzvrbEeWrhB4P3QBsH7tey117PjLZnDbLiQEKjQ/fNJTjuq4HSqgFA+UNSwZT8D7dxxbnuSBMsa1lrWzKlQg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/parser': 7.28.0
+      '@babel/parser': 7.28.3
       '@babel/types': 7.28.2
       '@jridgewell/gen-mapping': 0.3.12
       '@jridgewell/trace-mapping': 0.3.29
@@ -358,8 +358,8 @@ packages:
       '@babel/types': 7.28.2
     dev: false
 
-  /@babel/parser@7.28.0:
-    resolution: {integrity: sha512-jVZGvOxOuNSsuQuLRTh13nU0AogFlw32w/MT+LV6D3sP5WdbW61E77RnkbaO2dUvmPAYrBDJXGn5gGS6tH4j8g==}
+  /@babel/parser@7.28.3:
+    resolution: {integrity: sha512-7+Ey1mAgYqFAx2h0RuoxcQT5+MlG3GTV0TQrgr7/ZliKsm/MNDxVVutlWaziMq7wJNAz8MTqz55XLpWvva6StA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
@@ -391,7 +391,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/code-frame': 7.27.1
-      '@babel/parser': 7.28.0
+      '@babel/parser': 7.28.3
       '@babel/types': 7.28.2
     dev: false
 
@@ -402,7 +402,7 @@ packages:
       '@babel/code-frame': 7.27.1
       '@babel/generator': 7.28.0
       '@babel/helper-globals': 7.28.0
-      '@babel/parser': 7.28.0
+      '@babel/parser': 7.28.3
       '@babel/template': 7.27.2
       '@babel/types': 7.28.2
       debug: 4.4.1
@@ -2466,7 +2466,7 @@ packages:
   /@types/babel__core@7.20.5:
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
     dependencies:
-      '@babel/parser': 7.28.0
+      '@babel/parser': 7.28.3
       '@babel/types': 7.28.2
       '@types/babel__generator': 7.27.0
       '@types/babel__template': 7.4.4
@@ -2482,7 +2482,7 @@ packages:
   /@types/babel__template@7.4.4:
     resolution: {integrity: sha512-h/NUaSyG5EyxBIp8YRxo4RMe2/qQgvyowRwVMzhYhBCONbW8PUsg4lkFMrhgZhUe5z3L3MiLDuvyJ/CaPa2A8A==}
     dependencies:
-      '@babel/parser': 7.28.0
+      '@babel/parser': 7.28.3
       '@babel/types': 7.28.2
     dev: false
 
@@ -2756,8 +2756,8 @@ packages:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
     dev: false
 
-  /astro@5.12.9(@types/node@24.2.1)(typescript@5.9.2):
-    resolution: {integrity: sha512-cZ7kZ61jyE5nwSrFKSRyf5Gds+uJELqQxJFqMkcgiWQvhWZJUSShn8Uz3yc9WLyLw5Kim5P5un9SkJSGogfEZQ==}
+  /astro@5.13.0(@types/node@24.2.1)(typescript@5.9.2):
+    resolution: {integrity: sha512-kWahyvrrxUtgxFRRWSH5X0DESvgg4ZZ0fk6tU7blVZRgmj4PY79nzfaXFT+N+Ac2vWXX7eYUPYs1kLLk5IjBfQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
@@ -4449,7 +4449,7 @@ packages:
   /magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
     dependencies:
-      '@babel/parser': 7.28.0
+      '@babel/parser': 7.28.3
       '@babel/types': 7.28.2
       source-map-js: 1.2.1
     dev: false
@@ -7141,10 +7141,10 @@ packages:
     dependencies:
       '@astrojs/check': 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2)
       '@astrojs/react': 4.3.0(@types/node@24.2.1)(@types/react-dom@19.1.7)(@types/react@19.1.10)(react-dom@19.1.1)(react@19.1.1)
-      '@astrojs/tailwind': 6.0.2(astro@5.12.9)(tailwindcss@3.4.17)
+      '@astrojs/tailwind': 6.0.2(astro@5.13.0)(tailwindcss@3.4.17)
       '@types/react': 19.1.10
       '@types/react-dom': 19.1.7(@types/react@19.1.10)
-      astro: 5.12.9(@types/node@24.2.1)(typescript@5.9.2)
+      astro: 5.13.0(@types/node@24.2.1)(typescript@5.9.2)
       firebase: 12.1.0
       ogl: 1.0.11
       react: 19.1.1
