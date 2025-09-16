@@ -10,7 +10,7 @@ dependencies:
     version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2)
   '@astrojs/react':
     specifier: ^4.3.1
-    version: 4.3.1(@types/node@24.3.1)(@types/react-dom@19.1.9)(@types/react@19.1.12)(react-dom@19.1.1)(react@19.1.1)
+    version: 4.3.1(@types/node@24.5.0)(@types/react-dom@19.1.9)(@types/react@19.1.12)(react-dom@19.1.1)(react@19.1.1)
   '@astrojs/tailwind':
     specifier: ^6.0.2
     version: 6.0.2(astro@5.13.7)(tailwindcss@3.4.17)
@@ -22,7 +22,7 @@ dependencies:
     version: 19.1.9(@types/react@19.1.12)
   astro:
     specifier: ^5.13.7
-    version: 5.13.7(@types/node@24.3.1)(typescript@5.9.2)
+    version: 5.13.7(@types/node@24.5.0)(typescript@5.9.2)
   firebase:
     specifier: ^12.2.1
     version: 12.2.1
@@ -31,7 +31,7 @@ dependencies:
     version: 1.0.11
   portfolio:
     specifier: 'file:'
-    version: file:(@types/node@24.3.1)(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(tailwindcss@3.4.17)
+    version: file:(@types/node@24.5.0)(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(tailwindcss@3.4.17)
   react:
     specifier: ^19.1.1
     version: 19.1.1
@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^11.0.5
     version: 11.0.5(semantic-release@24.2.7)
   '@types/node':
-    specifier: ^24.3.1
-    version: 24.3.1
+    specifier: ^24.5.0
+    version: 24.5.0
   prettier:
     specifier: ^3.6.2
     version: 3.6.2
@@ -169,7 +169,7 @@ packages:
       prismjs: 1.30.0
     dev: false
 
-  /@astrojs/react@4.3.1(@types/node@24.3.1)(@types/react-dom@19.1.9)(@types/react@19.1.12)(react-dom@19.1.1)(react@19.1.1):
+  /@astrojs/react@4.3.1(@types/node@24.5.0)(@types/react-dom@19.1.9)(@types/react@19.1.12)(react-dom@19.1.1)(react@19.1.1):
     resolution: {integrity: sha512-Jhv35TsDHuQLvwof2z10P3g1s9wIR4UN9jE7O4NZBJNXOt/+qk+L0rY9th4SX7VzccKmRltUGxAhI1cXH52gXw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
     peerDependencies:
@@ -184,7 +184,7 @@ packages:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       ultrahtml: 1.6.0
-      vite: 6.3.6(@types/node@24.3.1)
+      vite: 6.3.6(@types/node@24.5.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -206,7 +206,7 @@ packages:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 5.13.7(@types/node@24.3.1)(typescript@5.9.2)
+      astro: 5.13.7(@types/node@24.5.0)(typescript@5.9.2)
       autoprefixer: 10.4.21(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)
@@ -1196,7 +1196,7 @@ packages:
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.15
-      '@types/node': 24.3.1
+      '@types/node': 24.5.0
     dev: false
 
   /@grpc/proto-loader@0.7.15:
@@ -2084,7 +2084,7 @@ packages:
   /@types/fontkit@2.0.8:
     resolution: {integrity: sha512-wN+8bYxIpJf+5oZdrdtaX04qUuWHcKxcDEgRS9Qm9ZClSHjzEn13SxUC+5eRM+4yXIeTYk8mTzLAWGF64847ew==}
     dependencies:
-      '@types/node': 24.3.1
+      '@types/node': 24.5.0
     dev: false
 
   /@types/hast@3.0.4:
@@ -2109,10 +2109,10 @@ packages:
       '@types/unist': 3.0.3
     dev: false
 
-  /@types/node@24.3.1:
-    resolution: {integrity: sha512-3vXmQDXy+woz+gnrTvuvNrPzekOi+Ds0ReMxw0LzBiK3a+1k0kQn9f2NWk+lgD4rJehFUmYy2gMhJ2ZI+7YP9g==}
+  /@types/node@24.5.0:
+    resolution: {integrity: sha512-y1dMvuvJspJiPSDZUQ+WMBvF7dpnEqN4x9DDC9ie5Fs/HUZJA3wFp7EhHoVaKX/iI0cRoECV8X2jL8zi0xrHCg==}
     dependencies:
-      undici-types: 7.10.0
+      undici-types: 7.12.0
 
   /@types/normalize-package-data@2.4.4:
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2152,7 +2152,7 @@ packages:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 6.3.6(@types/node@24.3.1)
+      vite: 6.3.6(@types/node@24.5.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2341,7 +2341,7 @@ packages:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
     dev: false
 
-  /astro@5.13.7(@types/node@24.3.1)(typescript@5.9.2):
+  /astro@5.13.7(@types/node@24.5.0)(typescript@5.9.2):
     resolution: {integrity: sha512-Of2tST7ErbE4y1dVb4aWDXaQSIRBAfraJ4jDqaA3PzPRJOn6Ina36+tQ+8BezjYqiWwRRJdOEE07PRAJXnsddw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
@@ -2400,7 +2400,7 @@ packages:
       unist-util-visit: 5.0.0
       unstorage: 1.17.1
       vfile: 6.0.3
-      vite: 6.3.6(@types/node@24.3.1)
+      vite: 6.3.6(@types/node@24.5.0)
       vitefu: 1.1.1(vite@6.3.6)
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
@@ -4992,8 +4992,8 @@ packages:
       resolve: 1.22.10
     dev: false
 
-  /postcss-js@4.0.1(postcss@8.5.6):
-    resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
+  /postcss-js@4.1.0(postcss@8.5.6):
+    resolution: {integrity: sha512-oIAOTqgIo7q2EOwbhb8UalYePMvYoIeRY2YKntdpFQXNosSu3vLrniGgmH9OKs/qAkfoj5oB3le/7mINW1LCfw==}
     engines: {node: ^12 || ^14 || >= 16}
     peerDependencies:
       postcss: ^8.4.21
@@ -5122,7 +5122,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 24.3.1
+      '@types/node': 24.5.0
       long: 5.3.2
     dev: false
 
@@ -5820,7 +5820,7 @@ packages:
       picocolors: 1.1.1
       postcss: 8.5.6
       postcss-import: 15.1.0(postcss@8.5.6)
-      postcss-js: 4.0.1(postcss@8.5.6)
+      postcss-js: 4.1.0(postcss@8.5.6)
       postcss-load-config: 4.0.2(postcss@8.5.6)
       postcss-nested: 6.2.0(postcss@8.5.6)
       postcss-selector-parser: 6.1.2
@@ -5979,8 +5979,8 @@ packages:
     resolution: {integrity: sha512-Ql87qFHB3s/De2ClA9e0gsnS6zXG27SkTiSJwjCc9MebbfapQfuPzumMIUMi38ezPZVNFcHI9sUIepeQfw8J8Q==}
     dev: false
 
-  /undici-types@7.10.0:
-    resolution: {integrity: sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==}
+  /undici-types@7.12.0:
+    resolution: {integrity: sha512-goOacqME2GYyOZZfb5Lgtu+1IDmAlAEu5xnD3+xTzS10hT0vzpf0SPjkXwAw9Jm+4n/mQGDP3LO8CPbYROeBfQ==}
 
   /unicode-emoji-modifier-base@1.0.0:
     resolution: {integrity: sha512-yLSH4py7oFH3oG/9K+XWrz1pSi3dfUrWEnInbxMfArOfc1+33BlGPQtLsOYwvdMy11AwUBetYuaRxSPqgkq+8g==}
@@ -6237,7 +6237,7 @@ packages:
       vfile-message: 4.0.3
     dev: false
 
-  /vite@6.3.6(@types/node@24.3.1):
+  /vite@6.3.6(@types/node@24.5.0):
     resolution: {integrity: sha512-0msEVHJEScQbhkbVTb/4iHZdJ6SXp/AvxL2sjwYQFfBqleHtnCqv1J3sa9zbWz/6kW1m9Tfzn92vW+kZ1WV6QA==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
@@ -6277,7 +6277,7 @@ packages:
       yaml:
         optional: true
     dependencies:
-      '@types/node': 24.3.1
+      '@types/node': 24.5.0
       esbuild: 0.25.9
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
@@ -6296,7 +6296,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 6.3.6(@types/node@24.3.1)
+      vite: 6.3.6(@types/node@24.5.0)
     dev: false
 
   /volar-service-css@0.0.62(@volar/language-service@2.4.22):
@@ -6697,17 +6697,17 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  file:(@types/node@24.3.1)(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(tailwindcss@3.4.17):
+  file:(@types/node@24.5.0)(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(tailwindcss@3.4.17):
     resolution: {directory: '', type: directory}
     id: 'file:'
     name: portfolio
     dependencies:
       '@astrojs/check': 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.2)
-      '@astrojs/react': 4.3.1(@types/node@24.3.1)(@types/react-dom@19.1.9)(@types/react@19.1.12)(react-dom@19.1.1)(react@19.1.1)
+      '@astrojs/react': 4.3.1(@types/node@24.5.0)(@types/react-dom@19.1.9)(@types/react@19.1.12)(react-dom@19.1.1)(react@19.1.1)
       '@astrojs/tailwind': 6.0.2(astro@5.13.7)(tailwindcss@3.4.17)
       '@types/react': 19.1.12
       '@types/react-dom': 19.1.9(@types/react@19.1.12)
-      astro: 5.13.7(@types/node@24.3.1)(typescript@5.9.2)
+      astro: 5.13.7(@types/node@24.5.0)(typescript@5.9.2)
       firebase: 12.2.1
       ogl: 1.0.11
       react: 19.1.1
