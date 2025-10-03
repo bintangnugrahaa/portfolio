@@ -76,6 +76,10 @@ const projects: Project[] = [
                   alt={`Screenshot of ${project.title} project`}
                   class="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
+                  decoding="async"
+                  width={1280}
+                  height={720}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
