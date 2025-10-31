@@ -2,7 +2,11 @@
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10">
       <div class="flex flex-col lg:items-start items-center space-y-6 gap-9">
-        <div class="flex space-x-6 sm:space-x-8" role="navigation" aria-label="Social media links">
+        <div
+          class="flex space-x-6 sm:space-x-8"
+          role="navigation"
+          aria-label="Social media links"
+        >
           {
             [
               {
@@ -61,7 +65,9 @@
               },
             ].map((tech) => (
               <div class="flex items-center justify-center lg:justify-start space-x-3">
-                <span class="text-[var(--white-icon)] text-sm">{tech.desc}</span>
+                <span class="text-[var(--white-icon)] text-sm">
+                  {tech.desc}
+                </span>
                 <img
                   src={tech.icon}
                   alt={tech.alt}
@@ -70,7 +76,9 @@
                   class="h-5 w-5 object-contain filter brightness-0 invert opacity-50"
                   loading="lazy"
                 />
-                <span class="text-[var(--white-icon)] text-sm">{tech.name}</span>
+                <span class="text-[var(--white-icon)] text-sm">
+                  {tech.name}
+                </span>
               </div>
             ))
           }
@@ -87,8 +95,7 @@
             class="w-full h-40"
             allowfullscreen
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
+            loading="lazy"></iframe>
         </div>
       </div>
     </div>
@@ -96,7 +103,11 @@
     <div class="mt-12 pt-8 border-t border-[#ffffff10]">
       <p class="text-center text-sm text-[var(--white-icon)] space-y-2">
         <span class="block sm:inline">
-          © 2025 <a href="https://github.com/bintangnugrahaa" rel="noopener noreferrer" target="_blank">Muhammad Bintang Nugraha</a>. All rights reserved.
+          © 2025 <a
+            href="https://github.com/bintangnugrahaa"
+            rel="noopener noreferrer"
+            target="_blank">Muhammad Bintang Nugraha</a
+          >. All rights reserved.
         </span>
       </p>
     </div>
