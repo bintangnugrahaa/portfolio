@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { doc, onSnapshot, updateDoc, increment } from "firebase/firestore";
+import { doc, onSnapshot, setDoc, increment } from "firebase/firestore";
 import { db } from "../firebase";
 
 const LikeButton = () => {
@@ -18,7 +18,6 @@ const LikeButton = () => {
       setIsLiked(storedIsLiked === "true");
     }
 
-    // Listen for realtime updates from Firestore
     const likeDocRef = doc(db, "likes", "counter");
     const unsubscribe = onSnapshot(likeDocRef, (docSnap) => {
       if (docSnap.exists()) {
@@ -27,7 +26,8 @@ const LikeButton = () => {
         setAnimateLikes(true);
         setTimeout(() => setAnimateLikes(false), 300);
       } else {
-        console.log("Document does not exist.");
+        console.log("Document does not exist. (Akan dibuat saat like pertama)");
+        setLikes(0);
       }
     });
 
@@ -42,9 +42,7 @@ const LikeButton = () => {
   };
 
   const handleLike = async () => {
-    if (isProcessing) return;
-
-    if (isLiked) {
+    if (isProcessing || isLiked) {
       triggerLikeAnimation();
       return;
     }
@@ -52,9 +50,11 @@ const LikeButton = () => {
     try {
       setIsProcessing(true);
       const likeDocRef = doc(db, "likes", "counter");
-      await updateDoc(likeDocRef, {
+
+      await setDoc(likeDocRef, {
         likes: increment(1),
-      });
+      }, { merge: true });
+
       setIsLiked(true);
       localStorage.setItem("websiteIsLiked", "true");
       triggerLikeAnimation();
