@@ -10,50 +10,32 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#101010" />
-    <meta
-      name="description"
-      content="Muhammad Bintang Nugraha - Web Developer portfolio"
-    />
+    <meta name="description" content="Muhammad Bintang Nugraha - Web Developer portfolio"/>
     <link rel="canonical" href="https://bintangnugraha.vercel.app" />
     <meta property="og:title" content="Muhammad Bintang Nugraha" />
     <meta property="og:description" content="Web Developer" />
-    <meta
-      property="og:image"
-      content="https://bintangnugraha.vercel.app/og.image.webp"
-    />
+    <meta property="og:image" content="https://bintangnugraha.vercel.app/og.image.webp" />
     <meta property="og:url" content="https://bintangnugraha.vercel.app" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:site_name"
-      content="Muhammad Bintang Nugraha Portfolio"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <meta property="og:site_name" content="Muhammad Bintang Nugraha Portfolio" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="preload"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     </noscript>
+
     <link rel="icon" type="image/webp" href="/favicon.webp" />
-    <link
-      rel="preload"
-      href="/_astro/index.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="/_astro/index.css" /></noscript>
+
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="dns-prefetch" href="https://formspree.io" />
+
     <title>{title}</title>
   </head>
 
@@ -94,19 +76,17 @@ const { title } = Astro.props;
     color: var(--background);
   }
 
+  /* Scrollbar styling */
   ::-webkit-scrollbar {
     width: 14px;
   }
-
   ::-webkit-scrollbar-track {
     background: var(--background);
   }
-
   ::-webkit-scrollbar-thumb {
     background: var(--white-icon);
     border-radius: 10px;
   }
-
   ::-webkit-scrollbar-thumb:hover {
     background: var(--sec);
   }
