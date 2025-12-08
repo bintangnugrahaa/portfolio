@@ -51,9 +51,13 @@ const LikeButton = () => {
       setIsProcessing(true);
       const likeDocRef = doc(db, "likes", "counter");
 
-      await setDoc(likeDocRef, {
-        likes: increment(1),
-      }, { merge: true });
+      await setDoc(
+        likeDocRef,
+        {
+          likes: increment(1),
+        },
+        { merge: true }
+      );
 
       setIsLiked(true);
       localStorage.setItem("websiteIsLiked", "true");
