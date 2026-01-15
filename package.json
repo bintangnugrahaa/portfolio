@@ -15,7 +15,7 @@
     "@astrojs/tailwind": "^6.0.2",
     "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
-    "astro": "^5.16.8",
+    "astro": "^5.16.9",
     "firebase": "^12.7.0",
     "ogl": "^1.0.11",
     "portfolio": "file:",
