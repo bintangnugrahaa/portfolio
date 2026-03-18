@@ -9,3 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    ignore:
+      # Mengabaikan update astro versi 6.0.0 ke atas untuk sementara
+      - dependency-name: "astro"
+        versions: ">= 6.0.0"
