@@ -1,0 +1,48 @@
+---
+// components
+import Container from "../../elements/Container.astro";
+import Heading from "../../elements/Heading.astro";
+import ResumeDropdown from "../../elements/ResumeDropdown.astro";
+import ContainerBottom from "../../elements/ContainerBottom.astro";
+
+// content
+const experience = [
+  {
+    title: "Website Developer Intern",
+    place: "Maritim Muda Nusantara",
+    period: "Jan 2025 - Jun 2025",
+    text: "Improved backend efficiency, reducing load time by 60% and increasing user engagement by 40%. Implemented a CMS protocol and trained regional admins for decentralized content updates.",
+  },
+  {
+    title: "Cloud Engineer Intern",
+    place: "AMATI Indonesia",
+    period: "Oct 2024 - Jan 2025",
+    text: "Built scalable GCP infrastructure with monitoring and cost-saving strategies, reducing cloud spend by 30%. Automated CI/CD with GitHub Actions and Cloud Build, cutting deployment time by 50%.",
+  },
+  {
+    title: "IT Support Technician Intern",
+    place: "Kelurahan Pondok Jaya",
+    period: "Jul 2021 - Oct 2021",
+    text: "Resolved hardware and network issues for 10+ staff members. Reduced system downtime by 40% through proactive maintenance and troubleshooting.",
+  },
+];
+---
+
+<Container variant={"md"}>
+  <Heading tagName="h2" tagSize="h2" class="text-center">Experience</Heading>
+  <div class="flex flex-col gap-4">
+    <Container class="flex flex-col gap-4 p-6 border-3 border-base-900">
+      {
+        experience.map((i) => (
+          <ResumeDropdown
+            title={i.title}
+            place={i.place}
+            period={i.period}
+            text={i.text}
+          />
+        ))
+      }
+    </Container>
+    <ContainerBottom />
+  </div>
+</Container>

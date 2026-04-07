@@ -1,16 +1,19 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Nav from "@/components/nav.astro";
-import Home from "@/components/home.astro";
-import Projects from "@/components/projects.astro";
-import Contact from "@/components/contact.astro";
-import Footer from "@/components/footer.astro";
+// layout
+import Layout from '../layouts/Layout.astro';
+
+// components
+import Hero from '../components/sections/home/Hero.astro';
+import SelectedWorks from '../components/sections/home/SelectedWorks.astro';
+import Services from '../components/sections/home/Services.astro';
+import About from '../components/sections/home/About.astro';
+import Faq from '../components/sections/home/Faq.astro';
 ---
 
-<Layout title="Muhammad Bintang Nugraha">
-  <Nav />
-  <Home />
-  <Projects />
-  <Contact />
-  <Footer />
+<Layout title="Home">
+    <Hero />
+    <SelectedWorks />
+    <Services />
+    <About />
+    <Faq />
 </Layout>

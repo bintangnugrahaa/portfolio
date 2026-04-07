@@ -1,0 +1,23 @@
+---
+// components
+import Container from "../../elements/Container.astro";
+import Heading from "../../elements/Heading.astro";
+import Text from "../../elements/Text.astro";
+import ImageContainer from "../../elements/ImageContainer.astro";
+
+// assets
+import bintang from "../../../assets/images/bintang.jpeg";
+---
+
+<Container variant={'xl'}>
+    <Heading tagName="h1" tagSize="h1" class="text-center">Meet Bintang</Heading>
+    <div class="flex md:flex-row flex-col gap-16 md:items-center">
+        <div class="flex-1 flex flex-col gap-7">
+            <Text variant={'xl'} class="text-base-900">I'm a full-stack web developer and cloud enthusiast passionate about building scalable applications and optimizing system performance.</Text>
+            <Text variant={'sm'} class="text-base-900">With hands-on experience in web development, cloud engineering, and technical mentoring, I specialize in creating robust digital solutions. I believe great software isn't just about writing functional code—it's about automating workflows, optimizing resources, and delivering seamless experiences that drive real impact.</Text>
+        </div>
+        <div class="flex-1 md:h-[500px] w-full">
+            <ImageContainer src={bintang} alt="Bintang"/>
+        </div>
+    </div>
+</Container>

@@ -1,116 +1,39 @@
 ---
+// stylesheet
 import "../styles/global.css";
 
-interface Props {
-  title: string;
-}
+// components
+import BaseHead from "../components/global/BaseHead.astro";
+import Wrapper from "../components/global/Wrapper.astro";
+import NavBar from "../components/global/Navigation.astro";
+import Footer from "../components/global/Footer.astro";
+
+// assets
+import '@fontsource/road-rage';
+import '@fontsource-variable/jetbrains-mono';
+import bg from "../assets/images/bg.jpg";
+import { getImage } from "astro:assets";
+const backgroundImage = await getImage({src: bg, format:'jpg'})
+
+// props
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#101010" />
-    <meta
-      name="description"
-      content="Muhammad Bintang Nugraha - Web Developer portfolio"
-    />
-    <link rel="canonical" href="https://bintangnugraha.vercel.app" />
-    <meta property="og:title" content="Muhammad Bintang Nugraha" />
-    <meta property="og:description" content="Web Developer" />
-    <meta
-      property="og:image"
-      content="https://bintangnugraha.vercel.app/og.image.webp"
-    />
-    <meta property="og:url" content="https://bintangnugraha.vercel.app" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:site_name"
-      content="Muhammad Bintang Nugraha Portfolio"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="preload"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
-
-    <link rel="icon" type="image/webp" href="/favicon.webp" />
-
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-    <link rel="dns-prefetch" href="https://formspree.io" />
-
-    <title>{title}</title>
-  </head>
-
-  <body class="bg-[--background] md:px-48 lg:px-20 px-9 text-[var(--white)]">
-    <main id="main-content" tabindex="-1">
-      <slot />
-    </main>
-  </body>
+<html lang="en" class="scroll-smooth">
+	<BaseHead pageTitle={title}/>
+	<body style=`background-image: url(${backgroundImage.src})` class="bg-cover bg-center bg-no-repeat bg-fixed  box-border">
+		<!-- Background noise effect -->
+		<div class="noise-[67,22,25] fixed inset-0 pointer-events-none"></div>
+		<!-- Wrapper component to make sure all content on the website is above the noise filter background -->
+		<Wrapper>
+			<NavBar />
+			<main class="flex flex-col xl:gap-48 lg:gap-40 gap-28">
+				<slot />
+			</main>
+			<Footer />
+		</Wrapper>
+	</body>
 </html>
 
-<style is:global>
-  :root {
-    --background: #101010;
-    --sec: #a476ff;
-    --white: #dfdfdf;
-    --white-icon: #f3f3f398;
-    --white-icon-tr: #f3f3f310;
-  }
 
-  html {
-    font-family:
-      "Montserrat",
-      -apple-system,
-      system-ui,
-      sans-serif;
-    scroll-behavior: smooth;
-    background-color: var(--background);
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  *::selection {
-    background-color: var(--sec);
-    color: var(--background);
-  }
-
-  /* Scrollbar styling */
-  ::-webkit-scrollbar {
-    width: 14px;
-  }
-  ::-webkit-scrollbar-track {
-    background: var(--background);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--white-icon);
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--sec);
-  }
-
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--white-icon) var(--background);
-  }
-</style>

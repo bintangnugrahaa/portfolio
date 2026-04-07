@@ -1,0 +1,46 @@
+---
+// components
+import Container from "../../elements/Container.astro";
+import ContainerBottom from "../../elements/ContainerBottom.astro";
+import Heading from "../../elements/Heading.astro";
+import Dropdown from "../../elements/Dropdown.astro";
+
+// content
+const faq = [
+    { 
+        title: "What's your typical project timeline?",
+        text: "Project timelines vary depending on scope and complexity. A simple landing page or company profile might take 2-3 weeks, while a comprehensive full-stack web application or systems requiring hardware integration typically ranges from 6-12 weeks."
+    },
+    { 
+        title: "How do you structure your pricing?",
+        text: "I offer both project-based and hourly pricing depending on the requirements. Most clients prefer fixed project rates for predictable budgeting. I typically require a 50% deposit to begin development, with the remainder due upon successful deployment."
+    },
+    { 
+        title: "What's included in your development process?",
+        text: "My process usually includes requirement gathering, system architecture and database design, agile development, rigorous testing, and final deployment to cloud platforms (like GCP or AWS)."
+    },
+    { 
+        title: "Do you work with clients remotely?",
+        text: "Absolutely! I am highly comfortable working remotely and have experience collaborating asynchronously. We can use video calls for key meetings and tools like GitHub for transparent progress tracking."
+    },
+    { 
+        title: "Do you offer post-launch support or revisions?",
+        text: "Yes, during development, there are structured revision rounds to ensure the application meets your needs. I also typically include a warranty period post-launch to address any minor bugs and ensure the system runs smoothly in production."
+    }
+];
+---
+
+<Container variant={'md'}>
+    <Heading tagName="h2" tagSize="h2" class="text-center">FAQ</Heading>
+    <div class="flex flex-col gap-4">
+        <Container class="flex flex-col gap-4 p-6 border-3 border-base-900">
+            {
+                faq.map((q, index) => (
+                    <Dropdown title=`${index + 1}. ${q.title}`  text={q.text} />
+                ))
+            }
+        </Container>
+        <ContainerBottom />        
+    </div>
+    
+</Container>

@@ -1,0 +1,38 @@
+---
+// components
+import Container from "../../elements/Container.astro";
+import Heading from "../../elements/Heading.astro";
+import Dropdown from "../../elements/Dropdown.astro";
+import ContainerBottom from "../../elements/ContainerBottom.astro";
+
+// content
+const services = [
+    { 
+        title: "Web Development",
+        text: "I specialize in developing Single Page Applications (SPAs), professional landing pages, business websites, and personal portfolios."
+    },
+    { 
+        title: "Mobile Development",
+        text: "I specialize in building responsive, mobile-friendly web applications and cross-platform mobile apps using Flutter."
+    },
+    { 
+        title: "Cloud Computing",
+        text: "I deploy applications to cloud platforms, manage servers and storage, and continuously monitor systems to optimize performance."
+    },
+]
+---
+
+<Container variant={'md'}>
+    <Heading tagName="h2" tagSize="h2" class="text-center">Services</Heading>
+    <div class="flex flex-col gap-4">
+        <Container class="flex flex-col gap-4 p-6 border-3 border-base-900">
+            {
+                services.map((service, index) => (
+                    <Dropdown title=`${index + 1}. ${service.title}` text={service.text} />  
+                ))
+            }       
+        </Container>
+        <ContainerBottom />    
+    </div>
+
+</Container>
