@@ -1,107 +1,108 @@
-# Grunge 
-Grunge is a portfolio Astro theme with a grunge aesthetic, perfect for developers, designers and any other creative who wants to stand out and show their love for the 90s music scene. 
+# Muhammad Bintang Nugraha - Portfolio
 
-## Tech stack
+A personal portfolio website built with Astro featuring a grunge aesthetic theme.
+
+## Tech Stack
+
 - Astro
 - Tailwind v4
 - JavaScript
 - TypeScript
+- React
+- Firebase
 
 ## Pages
+
 - Home
 - Works
-- Individual Work
 - About
 - Contact
 - 404
 
 ## Features
+
 - Content collections
 - Reusable components
 - Tailwind theme
 - Pagination
 - Sitemap
-- Ongoing updates
 
-If you have any questions, feel free to reach out:
-- [Bluesky](https://bsky.app/profile/gasparjs.bsky.social)
-- [bintangnugraha.dev@gmail.com](mailto:bintangnugraha.dev@gmail.com)
+## Contact
 
+- [LinkedIn](http://linkedin.com/in/bintangnugraha)
+- [Instagram](https://instagram.com/bintangnugraaha)
+- [Github](https://github.com/bintangnugrahaa)
+- [Website](https://bintangnugraha.my.id)
+- [Email](mailto:bintangnugraha.dev@email.com)
 
 ## 🚀 Project Structure
-
-Inside of your template, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
 │   └── favicon.svg
 ├── src
-│   ├── assets
-│   │   └── images
-│   │   └── ui
-│   │   └── work-card
-│   ├── components
-│   │   ├── elements     # elements that can be used across the website
-│   │   │   └── Container.astro
-│   │   │   └── ContainerBottom.astro
-│   │   │   └── Heading.astro
-│   │   │   └── ImageContainer.astro
-│   │   │   └── Link.astro
-│   │   │   └── Text.astro
-│   │   │   └── Dropdown.astro
-│   │   │   └── ResumeDropdown.astro
-│   │   │   └── Work.astro
-│   │   ├── global       # elements used on every page
-│   │   │   └── BaseHead.astro
-│   │   │   └── Footer.astro
-│   │   │   └── Navigation.astro
-│   │   │   └── Wrapper.astro
-│   │   ├── sections    # components used on each section of each page
-│   │   │   └── about
-│   │   │   │   └── Education.astro 
-│   │   │   │   └── Experience.astro 
-│   │   │   │   └── Intro.astro 
-│   │   │   ├── contact
-│   │   │   │   └── ContactDetails.astro 
-│   │   │   │   └── ContactItem.astro 
-│   │   │   │   └── Intro.astro 
-│   │   │   ├── home
-│   │   │   │   └── About.astro 
-│   │   │   │   └── Faq.astro 
-│   │   │   │   └── Hero.astro 
-│   │   │   │   └── SelectedWorks.astro 
-│   │   │   │   └── Services.astro 
-│   │   │   ├── works
-│   │   │   │   └── Pagination.astro 
-│   │   │   │   └── Works.astro
-│   ├── components
-│   │   ├── images
-│   │   │   └── (folders for each post - add your project images here)
-│   │   └── project-title.md
-│   │   └── (add your projects here)
-│   ├── layouts
-│   │   └── Layout.astro
-│   ├── pages
-│   │   └── works
-│   │   │   └── [...page].astro
-│   │   │   └── [page].astro
-│   │   └── index.astro
-│   │   └── 404.astro
-│   │   └── about.astro
-│   │   └── contact.astro
-│   ├── styles
-│   │   └── global.css  # global styling and tailwind theme configuration
-│   │   └── markdown.css  # markdown files styling
-│   └── content.config.ts
+│   ├── assets
+│   │   └── images
+│   │   └── ui
+│   │   └── work-card
+│   ├── components
+│   │   ├── elements
+│   │   │   └── Container.astro
+│   │   │   └── ContainerBottom.astro
+│   │   │   └── Heading.astro
+│   │   │   └── ImageContainer.astro
+│   │   │   └── Link.astro
+│   │   │   └── Text.astro
+│   │   │   └── Dropdown.astro
+│   │   │   └── ResumeDropdown.astro
+│   │   │   └── Work.astro
+│   │   ├── global
+│   │   │   └── BaseHead.astro
+│   │   │   └── Footer.astro
+│   │   │   └── Navigation.astro
+│   │   │   └── Wrapper.astro
+│   │   ├── sections
+│   │   │   └── about
+│   │   │   │   └── Education.astro
+│   │   │   │   └── Experience.astro
+│   │   │   │   └── Intro.astro
+│   │   │   ├── contact
+│   │   │   │   └── ContactDetails.astro
+│   │   │   │   └── ContactItem.astro
+│   │   │   │   └── Intro.astro
+│   │   │   ├── home
+│   │   │   │   └── About.astro
+│   │   │   │   └── Faq.astro
+│   │   │   │   └── Hero.astro
+│   │   │   │   └── SelectedWorks.astro
+│   │   │   │   └── Services.astro
+│   │   │   ├── works
+│   │   │   │   └── Pagination.astro
+│   │   │   │   └── Works.astro
+│   ├── content
+│   │   └── (markdown files for each project)
+│   ├── layouts
+│   │   └── Layout.astro
+│   ├── pages
+│   │   └── works
+│   │   │   └── [...page].astro
+│   │   │   └── [page].astro
+│   │   └── index.astro
+│   │   └── 404.astro
+│   │   └── about.astro
+│   │   └── contact.astro
+│   ├── styles
+│   │   └── global.css
+│   │   └── markdown.css
+│   └── content.config.ts
 └── .gitignore
-└── astro.config.ts
+└── astro.config.mjs
 └── LICENSE
 └── package-lock.json
 └── README.md
 └── tsconfig.json
 ```
-
 
 ## 🧞 Commands
 
@@ -116,3 +117,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+## License
+
+© 2026 Muhammad Bintang Nugraha. All Rights Reserved.
