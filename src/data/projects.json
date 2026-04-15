@@ -1,0 +1,77 @@
+[
+  {
+    "title": "TapTrack",
+    "description": "An advanced QR/RFID attendance ecosystem featuring real-time automated WhatsApp alerts and a sophisticated administrative interface for streamlined student tracking.",
+    "images": [
+      "attendance-1.webp",
+      "attendance-2.webp",
+      "attendance-3.webp",
+      "attendance-4.webp",
+      "attendance-5.webp"
+    ],
+    "tech": ["PHP", "Node.js", "MySQL", "Bootstrap"],
+    "platforms": ["web"],
+    "link": "https://absensi.bintangnugraha.my.id",
+    "category": "Published"
+  },
+  {
+    "title": "PresenBot",
+    "description": "A sophisticated attendance monitoring ecosystem utilizing WhatsApp and Telegram APIs for synchronous student tracking and comprehensive reporting.",
+    "images": [
+      "attendancebot-1.webp",
+      "attendancebot-2.webp",
+      "attendancebot-3.webp",
+      "attendancebot-4.webp",
+      "attendancebot-5.webp"
+    ],
+    "tech": ["PHP", "MySQL", "Bootstrap", "jQuery"],
+    "platforms": ["web"],
+    "link": "https://absensibot.bintangnugraha.my.id",
+    "category": "Published"
+  },
+  {
+    "title": "SariWangi",
+    "description": "A bespoke POS ecosystem architected to streamline laundry operations through automated transaction tracking and comprehensive fiscal auditing.",
+    "images": [
+      "laundry-1.webp",
+      "laundry-2.webp",
+      "laundry-3.webp",
+      "laundry-4.webp",
+      "laundry-5.webp"
+    ],
+    "tech": ["PHP", "MySQL", "Bootstrap", "jQuery"],
+    "platforms": ["web"],
+    "link": "https://laundry.bintangnugraha.my.id",
+    "category": "Published"
+  },
+  {
+    "title": "PharmPOS",
+    "description": "An avant-garde, multi-platform pharmacy management ecosystem that synergizes a robust Laravel-Filament administrative backend with a high-performance Flutter POS interface, streamlining inventory, sales, and fiscal operations with integrated payment gateways and thermal printing capabilities.",
+    "images": [
+      "pharmpos-1.webp",
+      "pharmpos-2.webp",
+      "pharmpos-3.webp",
+      "pharmpos-4.webp",
+      "pharmpos-5.webp"
+    ],
+    "tech": ["Laravel", "Flutter", "TailwindCSS"],
+    "platforms": ["android", "web"],
+    "link": "https://apotek.bintangnugraha.my.id",
+    "category": "Published"
+  },
+  {
+    "title": "GlowUp",
+    "description": "A premier, full-stack management ecosystem for the aesthetics industry, synergizing a robust Laravel administrative core with a high-fidelity Flutter interface to streamline clinical operations and financial performance.",
+    "images": [
+      "glowup-1.webp",
+      "glowup-2.webp",
+      "glowup-3.webp",
+      "glowup-4.webp",
+      "glowup-5.webp"
+    ],
+    "tech": ["Laravel", "Flutter", "TailwindCSS"],
+    "platforms": ["android", "web"],
+    "link": "https://klinik.bintangnugraha.my.id",
+    "category": "Published"
+  }
+]

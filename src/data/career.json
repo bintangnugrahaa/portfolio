@@ -1,0 +1,26 @@
+[
+  {
+    "company": "Maritim Muda Nusantara",
+    "role": "Website Developer Intern",
+    "period": "Jan 2025 - Jun 2025",
+    "type": "Internship",
+    "description": "Optimized backend architecture, reducing latency by 60% and increasing engagement by 40%. Developed a CMS for decentralized content management.",
+    "skills": ["PHP", "Laravel", "MySQL", "JavaScript"]
+  },
+  {
+    "company": "AMATI Indonesia",
+    "role": "Cloud Engineer Intern",
+    "period": "Oct 2024 - Jan 2025",
+    "type": "Internship",
+    "description": "Built scalable GCP infrastructure, cutting costs by 30%. Automated CI/CD pipelines to reduce deployment time by 50%.",
+    "skills": ["GCP", "GitHub Actions", "Cloud Build", "Shell Scripting"]
+  },
+  {
+    "company": "Kelurahan Pondok Jaya",
+    "role": "IT Support Technician Intern",
+    "period": "Jul 2021 - Oct 2021",
+    "type": "Internship",
+    "description": "Resolved hardware and network issues while reducing system downtime by 40% through proactive maintenance.",
+    "skills": ["Networking", "Hardware Diagnostics", "Troubleshooting"]
+  }
+]

@@ -1,122 +1,85 @@
-# Muhammad Bintang Nugraha - Portfolio
+# Muhammad Bintang Nugraha
 
-A personal portfolio website built with Astro featuring a grunge aesthetic theme.
+A fast, lightweight, and responsive personal portfolio website built using **Astro**, **TailwindCSS**, and **TypeScript**.
 
-## Tech Stack
+## 🚀 Features
 
-- Astro
-- Tailwind v4
-- JavaScript
-- TypeScript
-- React
-- Firebase
+- **Blazing Fast**: Static site generation powered by Astro for maximum performance.
+- **Data-Driven**: Content works out-of-the-box using local JSON files (`src/data/`), making it extremely easy to update your portfolio (projects, career history, tech stack) without modifying components.
+- **API Ready**: Supports fetching data from a live backend simply by providing an endpoint in the `.env` file.
+- **Modern Styling**: Beautifully designed with TailwindCSS.
+- **Icons**: Extensive icon support via `@iconify-json` and `astro-icon`.
 
-## Pages
-
-- Home
-- Works
-- About
-- Contact
-- 404
-
-## Features
-
-- Content collections
-- Reusable components
-- Tailwind theme
-- Pagination
-- Sitemap
-
-## Contact
-
-- [LinkedIn](http://linkedin.com/in/bintangnugraha)
-- [Instagram](https://instagram.com/bintangnugraaha)
-- [Github](https://github.com/bintangnugrahaa)
-- [Website](https://bintangnugraha.my.id)
-- [Email](mailto:bintangnugraha.dev@email.com)
-
-## 🚀 Project Structure
+## 📁 Project Structure
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── images
-│   │   └── ui
-│   │   └── work-card
-│   ├── components
-│   │   ├── elements
-│   │   │   └── Container.astro
-│   │   │   └── ContainerBottom.astro
-│   │   │   └── Heading.astro
-│   │   │   └── ImageContainer.astro
-│   │   │   └── Link.astro
-│   │   │   └── Text.astro
-│   │   │   └── Dropdown.astro
-│   │   │   └── ResumeDropdown.astro
-│   │   │   └── Work.astro
-│   │   ├── global
-│   │   │   └── BaseHead.astro
-│   │   │   └── Footer.astro
-│   │   │   └── Navigation.astro
-│   │   │   └── Wrapper.astro
-│   │   ├── sections
-│   │   │   └── about
-│   │   │   │   └── Education.astro
-│   │   │   │   └── Experience.astro
-│   │   │   │   └── Intro.astro
-│   │   │   ├── contact
-│   │   │   │   └── ContactDetails.astro
-│   │   │   │   └── ContactItem.astro
-│   │   │   │   └── Intro.astro
-│   │   │   ├── home
-│   │   │   │   └── About.astro
-│   │   │   │   └── Faq.astro
-│   │   │   │   └── Hero.astro
-│   │   │   │   └── SelectedWorks.astro
-│   │   │   │   └── Services.astro
-│   │   │   ├── works
-│   │   │   │   └── Pagination.astro
-│   │   │   │   └── Works.astro
-│   ├── content
-│   │   └── (markdown files for each project)
-│   ├── layouts
-│   │   └── Layout.astro
-│   ├── pages
-│   │   └── works
-│   │   │   └── [...page].astro
-│   │   │   └── [page].astro
-│   │   └── index.astro
-│   │   └── 404.astro
-│   │   └── about.astro
-│   │   └── contact.astro
-│   ├── styles
-│   │   └── global.css
-│   │   └── markdown.css
-│   └── content.config.ts
-└── .gitignore
-└── astro.config.mjs
-└── LICENSE
-└── package-lock.json
-└── README.md
-└── tsconfig.json
+├── public/           # Static assets like images and favicons
+├── src/
+│   ├── components/   # Astro and UI components
+│   ├── data/         # Local JSON data (career, home, projects, tech)
+│   └── pages/        # Astro routing pages
+├── .env.example      # Example environment variables
+├── astro.config.mjs  # Astro configuration
+└── package.json      # Project dependencies and scripts
 ```
 
-## 🧞 Commands
+## 🛠️ Getting Started
 
-All commands are run from the root of the project, from a terminal:
+### Prerequisites
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+You can use `bun`, `npm`, `yarn`, or `pnpm` to manage dependencies. This project uses `bun` based on its lockfile.
 
-## License
+### 1. Installation
 
-© 2026 Muhammad Bintang Nugraha. All Rights Reserved.
+Clone the repository and install the dependencies:
+
+```bash
+bun install
+```
+
+### 2. Environment Variables (Optional)
+
+By default, the portfolio will use the local JSON files located in `src/data/`.
+If you want to use an external API to serve your data, create a `.env` file from the example:
+
+```bash
+cp .env.example .env
+```
+
+And update the `PUBLIC_API_URL` variable:
+
+```env
+PUBLIC_API_URL=https://your-api-endpoint.com
+```
+
+### 3. Development
+
+Start the local development server:
+
+```bash
+bun run dev
+```
+
+Visit `http://localhost:4321` in your browser to view the portfolio.
+
+### 4. Build for Production
+
+To build the static site for deployment:
+
+```bash
+bun run build
+```
+
+This will generate a `dist/` directory containing your optimized, production-ready static files.
+
+## 🚀 Deployment
+
+Since this is a static Astro site, you can host it anywhere.
+
+- **Vercel / Netlify / Cloudflare Pages**: Simply push your code to your Git repository, and link it in their dashboards. It will build and deploy automatically.
+- **Shared Hosting**: Run `bun run build` locally, and upload the contents of the `dist/` folder directly to your `public_html` directory via FTP or File Manager.
+
+## 📄 License
+
+This project is licensed under the terms found in the `LICENSE` file.

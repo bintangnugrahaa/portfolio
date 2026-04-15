@@ -1,0 +1,30 @@
+{
+  "name": "Muhammad Bintang Nugraha",
+  "photoUrl": "favicon.svg",
+  "intro": "Full-stack architect engineering robust enterprise ecosystems. I specialize in scalable tracking infrastructures and cross-platform management platforms, prioritizing systemic resilience and flawless operational interoperability.",
+  "introHtml": "Full-stack architect engineering <span class='text-white font-bold'>robust enterprise ecosystems</span>. I specialize in scalable tracking infrastructures and cross-platform management platforms, prioritizing <span class='text-white font-bold'>systemic resilience</span> and flawless <span class='text-white font-bold'>operational interoperability</span>.",
+  "webpageTitle": "Muhammad Bintang Nugraha",
+  "resumeUrl": "/resume-bintang.pdf",
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/bintangnugrahaa",
+      "icon": "mdi:github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/bintangnugraha",
+      "icon": "mdi:linkedin"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:bintangnugraha.dev@gmail.com",
+      "icon": "mdi:email"
+    },
+    {
+      "name": "Whatsapp",
+      "url": "https://wa.me/6285155344998",
+      "icon": "mdi:whatsapp"
+    }
+  ]
+}
