@@ -1,23 +1,31 @@
 [
   {
+    "company": "Social Economic Accelerator Lab",
+    "role": "Frontend Developer",
+    "period": "Jul 2025 - Jan 2026",
+    "type": "Internship",
+    "description": "Engineered high-performing, responsive web interfaces while aligning technical execution with UX and product goals.",
+    "skills": ["JavaScript", "TypeScript", "ReactJS", "TailwindCSS"]
+  },
+  {
     "company": "Maritim Muda Nusantara",
-    "role": "Website Developer Intern",
+    "role": "Website Developer",
     "period": "Jan 2025 - Jun 2025",
     "type": "Internship",
     "description": "Optimized backend architecture, reducing latency by 60% and increasing engagement by 40%. Developed a CMS for decentralized content management.",
-    "skills": ["PHP", "Laravel", "MySQL", "JavaScript"]
+    "skills": ["Laravel", "CodeIgniter", "ReactJS", "TypeScript"]
   },
   {
     "company": "AMATI Indonesia",
-    "role": "Cloud Engineer Intern",
+    "role": "Cloud Engineer",
     "period": "Oct 2024 - Jan 2025",
     "type": "Internship",
     "description": "Built scalable GCP infrastructure, cutting costs by 30%. Automated CI/CD pipelines to reduce deployment time by 50%.",
-    "skills": ["GCP", "GitHub Actions", "Cloud Build", "Shell Scripting"]
+    "skills": ["GCP", "Laravel", "ReactJS", "TypeScript"]
   },
   {
     "company": "Kelurahan Pondok Jaya",
-    "role": "IT Support Technician Intern",
+    "role": "IT Support",
     "period": "Jul 2021 - Oct 2021",
     "type": "Internship",
     "description": "Resolved hardware and network issues while reducing system downtime by 40% through proactive maintenance.",
