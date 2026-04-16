@@ -45,6 +45,21 @@
     "category": "Published"
   },
   {
+    "title": "Collabra",
+    "description": "A sophisticated, Laravel-driven ecosystem orchestrating seamless ticket tracking, epic workflows, and secure client collaboration via a high-performance Filament interface.",
+    "images": [
+      "collabra-1.webp",
+      "collabra-2.webp",
+      "collabra-3.webp",
+      "collabra-4.webp",
+      "collabra-5.webp"
+    ],
+    "tech": ["Laravel", "Filament", "TailwindCSS"],
+    "platforms": ["web"],
+    "link": "https://pm.bintangnugraha.my.id",
+    "category": "Development"
+  },
+  {
     "title": "PharmPOS",
     "description": "An avant-garde, multi-platform pharmacy management ecosystem that synergizes a robust Laravel-Filament administrative backend with a high-performance Flutter POS interface, streamlining inventory, sales, and fiscal operations with integrated payment gateways and thermal printing capabilities.",
     "images": [
