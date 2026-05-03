@@ -7,9 +7,10 @@ import "@fontsource-variable/inter";
 
 interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,6 +18,7 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <title>{title}</title>
   </head>
@@ -99,12 +101,11 @@ const { title } = Astro.props;
 
         const span = document.createElement("span");
         const char = characters[Math.floor(Math.random() * characters.length)];
-        // const color = colors[Math.floor(Math.random() * colors.length)];
         const color = "var(--color-darkgray)";
 
         const left = Math.random() * 100;
-        const duration = 4 + Math.random() * 8; // 4s to 10s
-        const size = 10 + Math.random() * 10; // 10px to 20px
+        const duration = 6 + Math.random() * 6; // 6s to 12s
+        const size = 10 + Math.random() * 10;
 
         span.innerText = char;
         span.className = "falling-letter";
@@ -112,6 +113,7 @@ const { title } = Astro.props;
         span.style.color = color;
         span.style.fontSize = `${size}px`;
         span.style.animationDuration = `${duration}s`;
+        span.style.willChange = "transform, opacity";
 
         // Add a slight glow effect
         span.style.textShadow = `0 0 5px ${color}`;
@@ -124,8 +126,8 @@ const { title } = Astro.props;
       }
 
       if (window.innerWidth > 768) {
-        // one letter every 250ms
-        setInterval(createLetter, 250);
+        // Reduced frequency to improve performance (one letter every 400ms)
+        setInterval(createLetter, 400);
       } else {
         // Static scatter effect for mobile optimization
         const mobileCount = 20;

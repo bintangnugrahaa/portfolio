@@ -226,6 +226,11 @@ const navItems: NavItem[] = [
   const maxScroll = 1000;
   let lastScrollY = window.scrollY;
   let rafId: number | null = null;
+  let cachedWidth = window.innerWidth;
+
+  window.addEventListener("resize", () => {
+    cachedWidth = window.innerWidth;
+  });
 
   function updateNav() {
     const currentScrollY = window.scrollY;
@@ -237,23 +242,20 @@ const navItems: NavItem[] = [
       const easeProgress = 1 - Math.pow(1 - scrollProgress, 4);
 
       const minWidth = 620;
-      const maxWidth = window.innerWidth * 0.8;
+      const maxWidth = cachedWidth * 0.8;
       const currentWidth = maxWidth - (maxWidth - minWidth) * easeProgress;
 
-      if (window.innerWidth >= 768) {
+      if (cachedWidth >= 768) {
         nav?.style.setProperty("width", `${currentWidth}px`);
       }
     } else {
       nav?.classList.remove("scrolling");
-      // nav?.style.setProperty("width", "80%");
     }
-    if (window.innerWidth < 768) {
-      // Small buffer (e.g. 10px) to prevent accidental hiding on "jittery" scrolls
+
+    if (cachedWidth < 768) {
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // Scrolling Down - Hide Nav
         nav?.classList.add("nav-hidden");
       } else {
-        // Scrolling Up - Show Nav
         nav?.classList.remove("nav-hidden");
       }
     }

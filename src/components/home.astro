@@ -53,6 +53,7 @@ const { name, photoUrl, intro, introHtml, resumeUrl, socials } = data;
       <img
         src={photoUrl}
         alt={name}
+        fetchpriority="high"
         onerror="this.onerror=null;this.src='/placeholder.jpeg';"
         class="w-full h-full object-cover scale-110"
       />

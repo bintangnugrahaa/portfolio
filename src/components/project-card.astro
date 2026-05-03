@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
 const { project } = Astro.props;
 
 const isSlider = project.images.length > 1;
@@ -17,11 +18,13 @@ const isSlider = project.images.length > 1;
     <div class={`w-full h-full relative ${isSlider ? "image-slider" : ""}`}>
       {
         project.images.map((img, index) => (
-          <img
-            src={img}
+          <Image
+            src={img.startsWith("/") ? img : `/${img}`}
             alt={`${project.title} screenshot ${index + 1}`}
-            onerror="this.onerror=null;this.src='placeholder.jpeg';"
-            class={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${index === 0 ? "opacity-100 z-0" : "opacity-0 z-[-1]"}`}
+            width={800}
+            height={450}
+            loading="lazy"
+            class={`absolute inset-0 w-full h-full object-cover transition-[opacity,transform] duration-1000 group-hover:scale-110 ${index === 0 ? "opacity-100 z-0" : "opacity-0 z-[-1]"}`}
           />
         ))
       }
