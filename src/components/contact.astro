@@ -26,6 +26,8 @@ import localData from "../data/home.json";
             <a
               href={social.url}
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.name}
               class="group p-8 bg-white/5 border border-white/10 rounded-3xl hover:border-accent/40 hover:bg-accent/5 transition-all duration-300"
             >
               <Icon
@@ -61,6 +63,7 @@ import localData from "../data/home.json";
               <a
                 href="https://astro.build"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="hover:text-accent transition-colors flex items-center gap-1.5 group"
               >
                 <Icon

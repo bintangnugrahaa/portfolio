@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bintangnugraha.my.id/sitemap-index.xml
